@@ -1,7 +1,7 @@
 <?php
 
 function getDB1($sql, $param=[]){
-	$dsn  = 'mysql:dbname=quizdb;host=localhost';
+	$dsn  = 'mysql:dbname=quizedb;host=localhost';
 	$user = 'senpai';
 	$pw   = 'indocurry';
 
@@ -9,6 +9,7 @@ function getDB1($sql, $param=[]){
 	$sth = $dbh->prepare($sql);
 	$sth->execute($param);
 
-	return( $sth->fetch(PDO::FETCH_ASSOC) );
+	$buff = $sth->fetchAll(PDO::FETCH_ASSOC);
+	return( $buff );
 }
 

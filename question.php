@@ -8,7 +8,8 @@ $data = getDB1('select max(id) as maxid from Question');
 $i = rand(1, $data['maxid']);
 
 // 問題文を取得
-$data = getDB1('select question from Question where id=?', [$i]);
+$data = getDB1('select question from Question');
+var_dump($data);
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +29,8 @@ $data = getDB1('select question from Question where id=?', [$i]);
 	</form>
 
 <script>
-document.querySelector("#btn-answer").addEventListener("click", (e)=>{
+ console.log(data);
+/*document.querySelector("#btn-answer").addEventListener("click", (e)=>{
 	let answer = document.querySelector("#text-answer");
 
 	if ( answer.value == "" ){
@@ -39,8 +41,8 @@ document.querySelector("#btn-answer").addEventListener("click", (e)=>{
 	}
 	else{
 		document.querySelector("#btn-answer").innerHTML = "...送信中";
-	}	
-});
+	}
+});*/
 </script>
 </body>
 </html>
