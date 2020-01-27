@@ -43,9 +43,9 @@ $data = getDB1('select answer from Question where id=?', [$qid]);
             background-color: rgba(255, 255, 255, 0.5);
 		}
         #btn-next{
-            width: 1024px;
-            height: 144px;
-			font-size: 96px;
+            width: 512px;
+            height: 72px;
+			font-size: 48px;
         }
     </style>
 </head>
