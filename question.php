@@ -30,7 +30,7 @@ var_dump($data);
 
 <script>
  console.log(data);
-/*document.querySelector("#btn-answer").addEventListener("click", (e)=>{
+document.querySelector("#btn-answer").addEventListener("click", (e)=>{
 	let answer = document.querySelector("#text-answer");
 
 	if ( answer.value == "" ){
@@ -42,7 +42,7 @@ var_dump($data);
 	else{
 		document.querySelector("#btn-answer").innerHTML = "...送信中";
 	}
-});*/
+});
 </script>
 </body>
 </html>
