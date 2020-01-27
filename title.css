@@ -1,0 +1,18 @@
+body {
+    background-image: url(asset/background/title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#title {
+    font-size: 48pt;
+    color: Blue;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#btn-next {
+    width: 120px;
+    height: 40px;
+}
