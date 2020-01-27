@@ -50,6 +50,7 @@ $data = getDB1('select answer from Question where id=?', [$qid]);
     </style>
 </head>
 <body>
+	<embed src="asset/bgm/bgm_01.ogg",repeat="true",autostart="true",loop="infinete">
 	<div id="title">何個残ってる？？？</div>
 	<h1 id="result">
 		<?=$qid?>個
@@ -58,4 +59,4 @@ $data = getDB1('select answer from Question where id=?', [$qid]);
 	<button id="btn-next">タイトルに戻る</button>
 	</form>
 </body>
-</html>
+</html>https://github.com/naporitanOmega/TeamQuiz.git
