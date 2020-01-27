@@ -1,61 +1,12 @@
 ﻿<!DOCTYPE html>
-<html>
+
+<html lag="ja">
 <head>
-    <meta charset="utf8">
+    <meta charset="UTF-8">
     <title>上田 の しりとり</title>
-    <style>
-        body {
-            background-image: url(asset/background/title.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            text-align: center;
-            padding-top: 50px;
-        }
 
-        #title {
-            font-size: 48pt;
-            color: Blue;
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-
-        #btn-next {
-            width: 120px;
-            height: 40px;
-        }
-    </style>
-
-    <script type="text/javascript">
-      document.onkeydown = keydown;
-
-      function keydown() {
-        target = document.getElementById("message");
-        target.innerHTML = "キーが押されました KeyCode :" + event.keyCode;
-
-        target = document.getElementById("messageShift");
-        if (event.shiftKey == true) {
-          target.innerHTML = "Shiftキーが押されました";
-        }
-        else {
-          target.innerHTML = "";
-        }
-
-        target = document.getElementById("messageCtrl");
-        if (event.ctrlKey == true) {
-          target.innerHTML = "Ctrlキーが押されました";
-        }
-        else {
-          target.innerHTML = "";
-        }
-
-        target = document.getElementById("messageAlt");
-        if (event.altKey == true) {
-          target.innerHTML = "Altlキーが押されました";
-        }
-        else {
-          target.innerHTML = "";
-        }
-      }
-    </script>
+    <!--Bootstrapの読み込み-->
+    <link rel="stylesheet" href="./title.css">
 
 </head>
 <body>
@@ -65,11 +16,7 @@
         <button id="btn-next">START</button>
     </form>
 
-    <div>メッセージ</div>
-    <div id="message"></div>
-    <div id="messageShift"></div>
-    <div id="messageCtrl"></div>
-    <div id="messageAlt"></div>
-
+    <!--JQueryの読み込み-->
+    <script src="./title.js"></script>
 </body>
 </html>
